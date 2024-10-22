@@ -44,4 +44,4 @@ app.*.map.json
 
 
 
-lib\infrastructure\API_key.dart
+/lib/infrastructure/API_key.dart
