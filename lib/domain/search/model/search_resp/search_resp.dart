@@ -4,6 +4,8 @@ import '../../../../core/strings.dart';
 
 part 'search_resp.g.dart';
 
+// TMDB API call josn =JOSN to Dart
+
 @JsonSerializable()
 class SearchResp {
   @JsonKey(name: 'results')

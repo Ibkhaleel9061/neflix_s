@@ -43,6 +43,7 @@ class FastlaughPage extends StatelessWidget {
                 children: List.generate(state.videosList.length, (index) {
                   return VideoListItemInheritedWidget(
                     widget: VideoListItem(
+                      //video buttons widget here
                       key: Key(index.toString()),
                       index: index,
                     ),

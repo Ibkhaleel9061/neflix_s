@@ -5,6 +5,7 @@ class DownloadsState with _$DownloadsState {
   factory DownloadsState({
     required bool isLoading,
     required List<Downloads> downloads,
+    // No result yet
     required Option<Either<MainFailure, List<Downloads>>>
         downloadsFailureSucessOption,
   }) = _DownloadsState;

@@ -9,7 +9,7 @@ import '../../domain/new_and_hot/model/discover.dart';
 
 @LazySingleton(as: HotAndNewService)
 class HotAndNewImplementation implements HotAndNewService {
-  @override
+  @override //call the API URL path get the data
   Future<Either<MainFailure, HotAndNewDataResp>> getHotAndNewMovieData() async {
     try {
       final Response response = await Dio(BaseOptions()).get(
@@ -20,11 +20,13 @@ class HotAndNewImplementation implements HotAndNewService {
         final result = HotAndNewDataResp.fromJson(response.data);
         return Right(result);
       } else {
-        return const Left(MainFailure.serverFailure());
+        return const Left(MainFailure
+            .serverFailure()); //domain/core/failures/main_failure.dart';
       }
     } catch (e) {
       log(e.toString());
-      return const Left(MainFailure.clientFailure());
+      return const Left(MainFailure
+          .clientFailure()); //domain/core/failures/main_failure.dart';
     }
   }
 

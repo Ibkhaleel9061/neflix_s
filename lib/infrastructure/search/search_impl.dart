@@ -10,7 +10,7 @@ import 'package:neflix_s/domain/search/search_service.dart';
 
 @LazySingleton(as: SearchService)
 class searchImpl implements SearchService {
-  @override
+  @override //call the API URL path get the data
   Future<Either<MainFailure, SearchResp>> searchMovies(
       {required String movieQuery}) async {
     try {
@@ -25,11 +25,13 @@ class searchImpl implements SearchService {
         final result = SearchResp.fromJson(response.data);
         return Right(result);
       } else {
-        return const Left(MainFailure.serverFailure());
+        return const Left(MainFailure
+            .serverFailure()); //domain/core/failures/main_failure.dart';
       }
     } catch (e) {
       log(e.toString());
-      return const Left(MainFailure.clientFailure());
+      return const Left(MainFailure
+          .clientFailure()); //domain/core/failures/main_failure.dart';
     }
   }
 }

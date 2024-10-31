@@ -17,18 +17,24 @@ part 'downloads_bloc.freezed.dart';
 @injectable
 class DownloadsBloc extends Bloc<DownloadsEvent, DownloadsState> {
   final IDownloadsRepo _downloadsRepo;
+  //Constructor:IDownloadsRepo _downloadsRepo: An instance of the download repository, injected via constructor (dependency injection).
 
   DownloadsBloc(this._downloadsRepo) : super(DownloadsState.inital()) {
     on<_GetDownloadsImage>((event, emit) async {
+      //This line registers an event handler for the _GetDownloadsImage event. Whenever this event is triggered, the code inside this block will run.
       emit(
+        //Initial State Change:
         state.copyWith(
           isLoading: true,
           downloadsFailureSucessOption: none(),
         ),
       );
+      //Initial State Change: left or  right
       final Either<MainFailure, List<Downloads>> downloadsOption =
           await _downloadsRepo.getDownloadsImage();
       //log(downloadsOption.toString()); print the data in terminal
+
+      //Handling the Result:fold is used to handle both failure and success cases
       emit(
         downloadsOption.fold(
           (failure) => state.copyWith(

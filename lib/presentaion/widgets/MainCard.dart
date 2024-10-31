@@ -21,8 +21,6 @@ class mainCard extends StatelessWidget {
           image: DecorationImage(
             image: NetworkImage(imageUrl),
           )),
-      //borderRadius: BorderRadius.circular(7),
-      //fit: BoxFit.cover,
     );
   }
 }

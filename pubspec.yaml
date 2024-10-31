@@ -44,6 +44,12 @@ dependencies:
   share_plus: ^10.0.2
   get_it: ^7.2.0 
   injectable: 2.5.0
+
+  
+
+
+ 
+
   
 
 dev_dependencies:
@@ -63,6 +69,7 @@ dev_dependencies:
   injectable_generator: ^2.1.0
   freezed_annotation: ^2.4.2
   video_player: ^2.4.8
+  test: ^1.25.7
   
 
 # For information on the generic Dart part of this file, see the

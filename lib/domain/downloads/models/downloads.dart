@@ -2,6 +2,8 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'downloads.freezed.dart';
 part 'downloads.g.dart';
 
+// TMDB API call josn =JOSN to Dart
+
 @freezed
 class Downloads with _$Downloads {
   const factory Downloads({

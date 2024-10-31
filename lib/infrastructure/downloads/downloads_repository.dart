@@ -24,11 +24,13 @@ class DownloadsRepository implements IDownloadsRepo {
 
         return Right(downloadsList);
       } else {
-        return const Left(MainFailure.serverFailure());
+        return const Left(MainFailure
+            .serverFailure()); //domain/core/failures/main_failure.dart';
       }
     } catch (e) {
       log(e.toString());
-      return const Left(MainFailure.clientFailure());
+      return const Left(MainFailure
+          .clientFailure()); //domain/core/failures/main_failure.dart';
     }
   }
 }

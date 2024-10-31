@@ -144,7 +144,7 @@ class Section2 extends StatelessWidget {
   }
 }
 
-// section 3 buttons widget
+//section 3 buttons widget
 
 class Section3 extends StatelessWidget {
   const Section3({super.key});

@@ -58,7 +58,6 @@ class ComingSoonWidget extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 10),
                 child: Row(
-                  // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Expanded(
                       child: Text(
@@ -72,7 +71,6 @@ class ComingSoonWidget extends StatelessWidget {
                             fontWeight: FontWeight.bold),
                       ),
                     ),
-                    // const Spacer(),
                     Expanded(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.end,

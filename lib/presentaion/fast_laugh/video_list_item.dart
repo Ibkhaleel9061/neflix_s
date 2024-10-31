@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:neflix_s/core/colors/Colors.dart';
 import 'package:neflix_s/presentaion/fast_laugh/fast_lanugh_vido_playerState.dart';
 
-//import 'package:share_plus/share_plus.dart';
-
 import '../../application/fast_laugh/fast_laugh_bloc.dart';
 
 import '../../core/strings.dart';
@@ -63,7 +61,8 @@ class VideoListItem extends StatelessWidget {
                       radius: 30,
                       backgroundImage: posterPath == null
                           ? null
-                          : NetworkImage('$imageAppendUrl$posterPath'),
+                          : NetworkImage(
+                              '$imageAppendUrl$posterPath'), // reel profile url
                     ),
                   ),
                   ValueListenableBuilder(

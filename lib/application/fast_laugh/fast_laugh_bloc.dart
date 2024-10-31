@@ -60,12 +60,12 @@ class FastLaughBloc extends Bloc<FastLaughEvent, FastLaughState> {
     });
     on<LikeVideo>((event, emit) async {
       likedVideosIdNotifier.value.add(event.id);
-      // ignore: invalid_use_of_protected_member
+
       likedVideosIdNotifier.notifyListeners();
     });
     on<UnlikeVideo>((event, emit) async {
       likedVideosIdNotifier.value.remove(event.id);
-      // ignore: invalid_use_of_protected_member
+
       likedVideosIdNotifier.notifyListeners();
     });
   }

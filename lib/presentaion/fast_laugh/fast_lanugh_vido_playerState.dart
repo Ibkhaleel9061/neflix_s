@@ -37,7 +37,7 @@ class _FastLaughVidoPlayerState extends State<FastLaughVidoPlayer> {
           } else {
             _videoPlayerController.play();
           }
-          // _videoPlayerController.setVolume(0.0);
+          _videoPlayerController.setVolume(0.0);
         });
       },
       child: SizedBox(
@@ -88,6 +88,7 @@ class _FastLaughVidoPlayerState extends State<FastLaughVidoPlayer> {
                               ),
                             ),
                           )
+                        //video posing
                         : Container(
                             width: double.infinity,
                             height: double.infinity,
