@@ -11,4 +11,4 @@ Parsed complex JSON responses into Dart objects using the Freezed package,
 
 #output
 ![Untitled Project (1)](https://github.com/user-attachments/assets/311ffd28-f23e-41cb-9297-77f9d43d7503)
-![Untitled Project (2)](https://github.com/user-attachments/assets/89a655e5-3d0d-4390-8d99-a4afa523ad3c)
+![Untitled Project (4)](https://github.com/user-attachments/assets/2e556d3a-62ee-4e19-886d-e540183272ce)
