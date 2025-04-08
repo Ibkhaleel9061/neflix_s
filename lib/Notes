@@ -1,0 +1,16 @@
+
+
+tmdb api dociment = get all data base move
+
+translations API  = https://api.themoviedb.org/3/trending/tv/day?api_key=pasteyouerAPIKey
+
+
+
+
+flutter packages pub run build_runner watch --use-polling-watcher --delete-conflicting-outputs
+
+
+
+https://image.tmdb.org/t/p/w500/trending/all/day?api_key=xxxxxxxxxxxxxxxxxxx
+"$https://api.themoviedb.org/3/trending/all/day?api_key=xxxxxxxxxxxxxxxxxxxx";
+
