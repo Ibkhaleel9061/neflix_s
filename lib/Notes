@@ -11,5 +11,6 @@ flutter packages pub run build_runner watch --use-polling-watcher --delete-confl
 
 
 
-https://image.tmdb.org/t/p/w500/trending/all/day?api_key=66daa9b6162d30cb4c12d4c4db052ba3
-"$https://api.themoviedb.org/3/trending/all/day?api_key=66daa9b6162d30cb4c12d4c4db052ba3";
+https://image.tmdb.org/t/p/w500/trending/all/day?api_key=xxxxxxxxxxxxxxxxxxx
+"$https://api.themoviedb.org/3/trending/all/day?api_key=xxxxxxxxxxxxxxxxxxxx";
+
